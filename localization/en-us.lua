@@ -392,6 +392,13 @@ return {
 					"{C:chips}+#1#{} Chips",
 				},
 			},
+			j_crp_millijoker = {
+				name = "Millijoker",
+				text = {
+					"{C:mult}+#2#{} Mult",
+					"Only takes up {C:attention}#1#{} Joker Slots",
+				},
+			},
 			j_crp_pillaring = {
 				name = "Pillaring Joker",
 				text = {
@@ -1356,12 +1363,8 @@ return {
 			j_crp_all = {
 				name = "All",
 				text = {
-					"Creates {C:attention}#1# Joker#<s>1#{}, {C:attention}#2# consumable#<s>2#{}, {C:attention}#3# tag#<s>3#{}, and {C:attention}#4# voucher#<s>4#",
-					"based on their {C:attention}order{} in the {C:attention}collection backwards{} when hand played",
-					"Gains {C:dark_edition}+#6#{} Joker slot#<s>6# for every {C:attention}Joker{} created",
-					"and {C:attention}+#7#{} consumable slot#<s>7# for every {C:attention}consumable{} created",
-					"Increases amount of items created by {C:attention}#5#{} when triggered",
-					"{C:inactive}(Currently {C:dark_edition}+#8#{C:inactive} Joker slot#<s>8# and {C:attention}+#9#{C:inactive} consumable slot#<s>9#)",
+					"Sell this to create {C:attention}every Joker and Consumable{}",
+					"including {C:attention}All{}"
 				},
 			},
 		},

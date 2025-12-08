@@ -42,7 +42,7 @@ SMODS.Voucher {
 SMODS.Voucher {
     key = "reign",
     atlas = "crp_placeholder",
-    pos = { x = 7, y = 2 },
+    pos = { x = 11, y = 2 },
     config = { extra = { ante_scaling = 0.2 } },
 	requires = { "v_crp_domination" },
     loc_vars = function(self, info_queue, card)
@@ -56,7 +56,7 @@ SMODS.Voucher {
 SMODS.Voucher {
     key = "supremacy",
     atlas = "crp_placeholder",
-    pos = { x = 7, y = 2 },
+    pos = { x = 12, y = 2 },
     config = { extra = { } },
 	requires = { "v_crp_reign" },
     loc_vars = function(self, info_queue, card)
@@ -110,7 +110,7 @@ SMODS.Voucher {
 SMODS.Voucher {
     key = "godhood",
     atlas = "crp_placeholder",
-    pos = { x = 7, y = 2 },
+    pos = { x = 13, y = 2 },
     config = { extra = {  } },
 	requires = { "v_crp_supremacy" },
     loc_vars = function(self, info_queue, card)
@@ -123,7 +123,7 @@ SMODS.Voucher {
 SMODS.Voucher {
     key = "ascension",
     atlas = "crp_placeholder",
-    pos = { x = 7, y = 2 },
+    pos = { x = 13, y = 2 },
     config = { extra = {  } },
 	requires = { "v_crp_godhood" },
     loc_vars = function(self, info_queue, card)
@@ -139,7 +139,6 @@ SMODS.Voucher {
 		end
     end
 }
-
 -- i love bulgoe
 SMODS.Voucher {
     key = "bulgoverstock",
@@ -226,7 +225,7 @@ SMODS.Voucher {
     name = "Rabbulgoe Hole",
     atlas = "crp_placeholder",
     pronouns = "bulgoe",
-    pos = { x = 7, y = 2 },
+    pos = { x = 11, y = 2 },
     config = { extra = { prev_bulgoes = 0, current_bulgoes = 0 } },
 	requires = { "v_crp_bulgadicioe" },
     loc_vars = function(self, info_queue, card)
@@ -271,7 +270,7 @@ SMODS.Voucher {
     key = "bulgnation",
     name = "Bulgnation",
     atlas = "crp_placeholder",
-    pos = { x = 7,  y = 2 },
+    pos = { x = 12,  y = 2 },
     config = { extra = { } },
     requires = { "v_crp_rabbulgoe_hole" },
     pronouns = "bulgoe",
@@ -308,7 +307,7 @@ SMODS.Voucher {
     key = "bulgcrowd",
     name = "Bulgcrowd",
     atlas = "crp_placeholder",
-    pos = { x = 7, y = 2 },
+    pos = { x = 13, y = 2 },
     config = { extra = { money = 27} },
 	requires = { "v_crp_bulgnation" },
     pronouns = "bulgoe",
@@ -357,7 +356,7 @@ SMODS.Voucher {
     key = "bulgscension",
     name = "Bulgscension",
     atlas = "crp_placeholder",
-    pos = { x = 7, y = 2 },
+    pos = { x = 13, y = 2 },
     config = { extra = { } },
 	requires = { "v_crp_bulgcrowd" },
     pronouns = "bulgoe",
@@ -408,7 +407,7 @@ SMODS.Voucher {
     key = "patience_2",
     name = "More Patience",
     atlas = "crp_placeholder",
-    pos = { x = 5, y = 2 },
+    pos = { x = 6, y = 2 },
     config = { extra = {  } },
     loc_vars = function(self, info_queue, card)
         return { vars = {  } }
@@ -426,7 +425,7 @@ SMODS.Voucher {
     key = "patience_3",
     name = "Even More Patience",
     atlas = "crp_placeholder",
-    pos = { x = 5, y = 2 },
+    pos = { x = 7, y = 2 },
     config = { extra = {  } },
     loc_vars = function(self, info_queue, card)
         return { vars = {  } }
@@ -444,7 +443,7 @@ SMODS.Voucher {
     key = "patience_4",
     name = "Even More Patience Again",
     atlas = "crp_placeholder",
-    pos = { x = 5, y = 2 },
+    pos = { x = 11, y = 2 },
     config = { extra = {  } },
     loc_vars = function(self, info_queue, card)
         return { vars = {  } }
@@ -462,7 +461,7 @@ SMODS.Voucher {
     key = "patience_5",
     name = "So Much Patience",
     atlas = "crp_placeholder",
-    pos = { x = 5, y = 2 },
+    pos = { x = 12, y = 2 },
     config = { extra = {  } },
     loc_vars = function(self, info_queue, card)
         return { vars = {  } }
@@ -480,7 +479,7 @@ SMODS.Voucher {
     key = "payoff",
     name = "Payoff", -- +4 chips!!1!1!!!
     atlas = "crp_placeholder",
-    pos = { x = 5, y = 2 },
+    pos = { x = 13, y = 2 },
     config = { extra = {  } },
     loc_vars = function(self, info_queue, card)
         return { vars = {  } }
@@ -501,7 +500,7 @@ SMODS.Voucher {
     key = "just_kidding",
     name = "Just Kidding, This Is the Real Payoff", -- oh
     atlas = "crp_placeholder",
-    pos = { x = 7, y = 2 },
+    pos = { x = 13, y = 2 },
     config = { extra = { all_count = 1 } },
     loc_vars = function(self, info_queue, card)
         info_queue[#info_queue + 1] = G.P_CENTERS.e_negative

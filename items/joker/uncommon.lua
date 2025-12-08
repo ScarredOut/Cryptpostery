@@ -52,8 +52,8 @@ SMODS.Joker {
 	key = "q_big",
 	name = "Q",
 	rarity = 2,
-	atlas = "crp_placeholder",
-	pos = { x = 3, y = 0 },
+	atlas = "crp_joker2",
+	pos = { x = 9, y = 2 },
 	cost = 8,
 	blueprint_compat = true,
 	demicoloncompat = true,
@@ -69,6 +69,7 @@ SMODS.Joker {
 	end,
 	crp_credits = {
 		idea = { "superb_thing" },
+		art = { "galacticbambo" },
 		code = { "wilfredlam0418" }
 	}
 }
@@ -170,8 +171,8 @@ SMODS.Joker {
 	name = "Waldo",
 	config = { extra = { mult = 10 } },
 	rarity = 2,
-	atlas = "crp_placeholder",
-	pos = { x = 3, y = 0 },
+	atlas = "crp_joker2",
+	pos = { x = 1, y = 3 },
 	cost = 5,
 	blueprint_compat = true,
 	demicoloncompat = true,
@@ -187,6 +188,7 @@ SMODS.Joker {
 	end,
 	crp_credits = {
 		idea = { "aqrlr" },
+		idea = { "raven" },
 		code = { "Rainstar" }
 	}
 }

@@ -1,11 +1,10 @@
-
 SMODS.Joker {
 	key = "q",
 	name = "q",
 	config = { extra = { eqmult = 1200, eqmult_mod = 1200 } },
 	rarity = "cry_epic",
-	atlas = "crp_placeholder",
-	pos = { x = 5, y = 0 },
+	atlas = "crp_joker2",
+	pos = { x = 8, y = 2 },
 	cost = 12,
 	blueprint_compat = false,
 	demicoloncompat = false,
@@ -35,6 +34,7 @@ SMODS.Joker {
 	end,
 	crp_credits = {
 		idea = { "superb_thing" },
+		idea = { "galacticbambo" },
 		code = { "Rainstar" },
 	}
 }
@@ -75,8 +75,8 @@ SMODS.Joker {
 	name = "10,000 Coins Falling on You",
 	config = { extra = { money = 10000 } },
 	rarity = "cry_epic",
-	atlas = "crp_placeholder",
-	pos = { x = 5, y = 0 },
+	atlas = "crp_joker2",
+	pos = { x = 0, y = 3 },
 	cost = 15,
 	blueprint_compat = false,
 	demicoloncompat = true,
@@ -98,6 +98,7 @@ SMODS.Joker {
 	end,
 	crp_credits = {
 		idea = { "Poker The Poker", "Glitchkat10" },
+		idea = { "Canadian Shark" },
 		code = { "wilfredlam0418" },
 	}
 }

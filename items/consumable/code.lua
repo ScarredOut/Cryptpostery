@@ -2,9 +2,9 @@ SMODS.Consumable {
 	key = "decrement",
 	name = "Decrement",
 	set = "Code",
-	pos = { x = 9, y = 2 },
+	pos = { x = 4, y = 0 },
 	config = { extra = { ante = 1 } },
-	atlas = "crp_placeholder",
+	atlas = "crp_consumable",
 	loc_vars = function(self, info_queue, card)
 		if not card or not card.ability or not card.ability.extra or not card.ability.extra.ante then
 			return { vars = { 0 } } 
@@ -22,6 +22,7 @@ SMODS.Consumable {
 	end,
 	crp_credits = {
 		idea = { "Unknown" },
+		art = { "galacticbambo" },
 		code = { "wilfredlam0418" }
 	}
 }
@@ -30,9 +31,9 @@ SMODS.Consumable {
 	key = "ip_192",
 	name = "://IP_192.168.1.1",
 	set = "Code",
-	pos = { x = 9, y = 2 },
+	pos = { x = 3, y = 0 },
 	config = { immutable = { odds = 2727 } },
-	atlas = "crp_placeholder",
+	atlas = "crp_consumable",
 	loc_vars = function(self, info_queue, card)
 		info_queue[#info_queue + 1] = G.P_CENTERS.j_crp_bulgoe
 		info_queue[#info_queue + 1] = G.P_CENTERS.j_crp_normalis
@@ -55,6 +56,7 @@ SMODS.Consumable {
 	end,
 	crp_credits = {
 		idea = { "SolvLyi" },
+		art = { "galacticbambo" },
 		code = { "wilfredlam0418" }
 	}
 }

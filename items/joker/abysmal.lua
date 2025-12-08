@@ -99,8 +99,9 @@ SMODS.Joker {
 	name = "Heptation Hank",
 	config = { immutable = { arrows = 5, self_destruct = 10 ^ 10 ^ 1.1 }, extra = { mantissa = 0.9 } },
 	rarity = "crp_abysmal",
-	atlas = "crp_placeholder",
-	pos = { x = 4, y = 1 },
+	atlas = "crp_hank",
+    pos = { x = 0, y = 0 },
+    soul_pos = { x = 1, y = 7, extra = { x = 0, y = 7 } },
 	cost = 0,
 	blueprint_compat = true,
 	demicoloncompat = true,
@@ -156,8 +157,18 @@ SMODS.Joker {
 			card:remove_from_deck()
 		end
 	end,
+	animation = {
+        macro = {
+            type = "skim",
+            pos = {
+                include = { { x1 = 0, x2 = 3, y1 = 0, y2 = 6 } },
+                exclude = { { x1 = 0, x2 = 3, y1 = 7, y2 = 7 } }
+            }
+        }
+    },
 	crp_credits = {
 		idea = { "Psychomaniac14" },
+		art = { "galacticbambo" },
 		code = { "wilfredlam0418" }
 	}
 }

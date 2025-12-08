@@ -28,6 +28,32 @@ SMODS.Joker {
 	}
 }
 
+SMODS.Joker {
+	key = "millijoker",
+	name = "Millijoker",
+	config = { extra_slots_used = -0.999, extra = { mult = 0.004 } },
+	rarity = 1,
+	display_size = { w = 0.1 * 71, h = 0.1 * 95 },
+	pos = { x = 0, y = 0 },
+	cost = 1,
+	blueprint_compat = true,
+	demicoloncompat = true,
+	loc_vars = function(self, info_queue, card)
+		return { vars = { card.ability.extra_slots_used, card.ability.extra.mult } }
+	end,
+	calculate = function(self, card, context)
+		if (context.joker_main) or context.forcetrigger then
+			return {
+				mult = lenient_bignum(card.ability.extra.mult)
+			}
+		end
+	end,
+	crp_credits = {
+		idea = { "borb43" },
+		code = { "Rainstar" }
+	}
+}
+
 SMODS.Joker { -- the reanimation is fucking real
 	key = "dead_joker",
 	config = { extra = { chips = 0, chips_mod = 25 } },
