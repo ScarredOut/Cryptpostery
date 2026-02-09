@@ -10,6 +10,7 @@ function Blind:disable() -- hook to not let legendary blinds+ be disabled unless
 end
 -- Pokios effect hook
 ogupdate = Game.update
+crp_hermes_eeeblindchips = 1.00001
 function Game:update(dt)
 	ogupdate(self, dt)
 	if G.GAME.blind then -- prevent exploding if theres no blind active
@@ -20,9 +21,8 @@ function Game:update(dt)
 			end
 		elseif G.GAME.blind.name == "Hermes (S, EM+)" then -- if blind is hermes...
 			if not next(SMODS.find_card("j_crp_jean_antoine")) then -- and no jean...
-				local eeeblindchips = 1.00001
-				G.GAME.blind.chips = G.GAME.blind.chips:arrow(3, eeeblindchips) -- destroy the game even more
-				eeeblindchips = eeeblindchips + 0.00001
+				G.GAME.blind.chips = G.GAME.blind.chips:arrow(3, crp_hermes_eeeblindchips) -- destroy the game even more
+				crp_hermes_eeeblindchips = crp_hermes_eeeblindchips + 0.00001
 				G.GAME.blind.chip_text = number_format(G.GAME.blind.chips)
 			end
 		end
@@ -1063,6 +1063,9 @@ SMODS.Blind {
 	boss = { min = 64, max = 10, showdown = true },
 	blindrarity = "ExoMythic",
 	mult = 1e100,
+	set_blind = function(self)
+		crp_hermes_eeeblindchips = 1.00001 -- reset the value so if you encounter it again somehow it doesn't pick up where it left off
+	end,
 	defeat = function(self, card, from_blind)
 		ease_dollars((G.GAME.dollars ^ 300) - G.GAME.dollars)
 	end,
