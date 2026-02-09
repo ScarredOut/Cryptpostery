@@ -350,11 +350,13 @@ SMODS.Blind {
 	atlas = "blind",
 	mult = 0.13,
 	recalc_debuff = function(self, card, from_blind)
-		if ((card.area == G.jokers)
-		and not G.GAME.blind.disabled
-		and (card:is_jolly() or (Cryptid.safe_get(card.config.center, "pools", "M"))))
-		and (card.config.center.key ~= "j_chicot" and card.config.center.key ~= "j_crp_jean_antoine") then -- since this is a cryptid addon we'll use cryptids function for this
-			return false
+		if (card.area == G.jokers) then
+			if (not G.GAME.blind.disabled
+			and (card:is_jolly() or (Cryptid.safe_get(card.config.center, "pools", "M"))))
+			and (card.config.center.key ~= "j_chicot" and card.config.center.key ~= "j_crp_jean_antoine") then -- since this is a cryptid addon we'll use cryptids function for this
+				return false
+			end
+			return true
 		end
 		return false
 	end,
